@@ -25,7 +25,11 @@ public class Exercicio13 {
     System.out.println("A multiplicação entre " + num1 + " e " + num2 + " é: " + (num1 * num2) + ".");
     break;
     case '/':
-    System.out.println("A divisão entre " + num1 + " e " + num2 + " é: " + (num1 / num2) + ".");
+    if (num2 == 0) {
+      System.out.println("Divisão por zero. Erro!");
+    } else {
+      System.out.println("A divisão entre " + num1 + " e " + num2 + " é: " + (num1 / num2) + ".");
+      
     break;
     default: 
     System.out.println("O tipo de operação matemática está incorreto. Revise o valor informado e tente novamente.");
